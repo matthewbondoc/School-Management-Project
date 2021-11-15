@@ -13,6 +13,9 @@ public class Student {
     private String email;
     private int age;
 
+    public Student(int idNumber) {
+        this.idNumber = idNumber;
+    }
     public String getFirstName() {
         return firstName;
     }
