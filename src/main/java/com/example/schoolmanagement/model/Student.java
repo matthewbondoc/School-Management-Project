@@ -7,13 +7,25 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Student {
 
     @Id
+    private String id;
     private int idNumber;
     private String firstName;
     private String lastName;
     private String email;
     private int age;
 
-    public Student(int idNumber) {
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+    public int getIdNumber() {
+        return idNumber;
+    }
+    public void setIdNumber(int idNumber) {
         this.idNumber = idNumber;
     }
     public String getFirstName() {

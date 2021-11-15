@@ -2,8 +2,8 @@ package com.example.schoolmanagement.controller;
 
 import java.util.List;
 
+import com.example.schoolmanagement.data.StudentData;
 import com.example.schoolmanagement.model.Student;
-import com.example.schoolmanagement.repository.StudentData;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,9 +24,9 @@ public class StudentController {
 
         }
 
-        @PostMapping("/delete/{idNumber}")
-        public void deleteStudent(@PathVariable String idNumber) {
-                studentData.deleteById(idNumber);
+        @PostMapping("/delete/{id}")
+        public void deleteStudent(@PathVariable String id) {
+                studentData.deleteById(id);
 
         }
 
