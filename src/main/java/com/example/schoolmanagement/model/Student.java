@@ -11,12 +11,21 @@ public class Student {
     private int idNumber;
     private String firstName;
     private String lastName;
+    private String yearLevel;
     private String email;
     private int age;
 
 
     public String getId() {
         return id;
+    }
+
+    public String getYearLevel() {
+        return yearLevel;
+    }
+
+    public void setYearLevel(String yearLevel) {
+        this.yearLevel = yearLevel;
     }
 
     public void setId(String id) {
